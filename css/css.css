@@ -136,7 +136,7 @@ button {
 }
 
 /*cisc3610*/
-.acisc3610_list {
+.cisc3610_list {
   width: 930px;
   height: 450px;
   padding: 0.5rem 0rem;
@@ -145,6 +145,12 @@ button {
 .cisc3610_top {
   width: 100%;
   height: 320px;
+}
+
+.cisc3610_top ul li {
+  padding-top: 130px;
+  color: blue;
+  text-decoration: underline;
 }
 
 .cisc3610_bottom {
