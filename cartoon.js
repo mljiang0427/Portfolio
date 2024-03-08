@@ -34,10 +34,10 @@ Game.draw = function () {
   // Create circular gradient (sun)
   gradient = Game.ctx.createRadialGradient(
     this.canvas.width - 323,
-    this.canvas.height - 484,
+    this.canvas.height - 554,
     5,
     this.canvas.width - 323,
-    this.canvas.height - 484,
+    this.canvas.height - 554,
     100
   );
   gradient.addColorStop(0, "orange");
@@ -46,7 +46,7 @@ Game.draw = function () {
   Game.ctx.beginPath();
   Game.ctx.arc(
     this.canvas.width - 323,
-    this.canvas.height - 484,
+    this.canvas.height - 554,
     60,
     0,
     2 * Math.PI
@@ -177,24 +177,24 @@ Game.drawHouse = function () {
 
   // Draw the house outline
   Game.ctx.beginPath();
-  Game.ctx.moveTo(50, 300);
-  Game.ctx.lineTo(200, 100);
-  Game.ctx.lineTo(350, 300);
+  Game.ctx.moveTo(50, this.canvas.height - 300); //
+  Game.ctx.lineTo(200, this.canvas.height - 500);
+  Game.ctx.lineTo(350, this.canvas.height - 300);
   Game.ctx.closePath();
   Game.ctx.stroke();
-  Game.ctx.rect(80, 300, 240, 100);
+  Game.ctx.rect(80, this.canvas.height - 300, 240, 100);
   Game.ctx.stroke();
 
   // Draw the windows
   Game.ctx.fillStyle = "#ab6e55";
-  Game.ctx.fillRect(95, 310, 30, 30);
-  Game.ctx.fillRect(275, 310, 30, 30);
+  Game.ctx.fillRect(110, this.canvas.height - 290, 30, 30);
+  Game.ctx.fillRect(260, this.canvas.height - 290, 30, 30);
 
   // Draw the door
   Game.ctx.fillStyle = "#ab6e55";
-  Game.ctx.fillRect(190, 350, 35, 50);
+  Game.ctx.fillRect(182, this.canvas.height - 251, 35, 50);
   Game.ctx.beginPath();
-  Game.ctx.arc(220, 375, 1.75, 0, Math.PI * 2);
+  Game.ctx.arc(212, this.canvas.height - 225, 1.75, 0, Math.PI * 2);
   Game.ctx.fillStyle = "black";
   Game.ctx.fill();
 };
