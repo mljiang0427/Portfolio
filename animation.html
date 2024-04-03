@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <link rel="stylesheet" src="style.css" />
+
+    <style>
+      #gameArea {
+        position: relative;
+      }
+
+      canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 1px solid #f1f1f1;
+      }
+    </style>
+
+    <script src="cartoon.js"></script>
+    <script src="animation.js"></script>
+    <script src="bird.js"></script>
+  </head>
+  <body>
+    <div id="gameArea">
+      <canvas
+        id="myCanvas"
+        style="border: 1px solid #000000; background-color: #e8f2f4"
+      ></canvas>
+      <canvas id="animationCanvas"></canvas>
+    </div>
+  </body>
+</html>

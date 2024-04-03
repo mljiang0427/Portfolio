@@ -5,7 +5,7 @@ let gradient;
 var Game = {
   canvas: undefined,
   ctx: undefined,
-  sprite: undefined,
+  //sprite: undefined,
 };
 
 Game.start = function () {
@@ -18,7 +18,9 @@ Game.start = function () {
 
 document.addEventListener("DOMContentLoaded", Game.start);
 
-Game.update = function () {};
+Game.update = function () {
+  Game.canvas.width = window.innerWidth;
+};
 
 Game.draw = function () {
   // Create linear gradient (text)
