@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" src="style.css" />
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: url("images/green.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+      }
+
+      #calculator {
+        background: rgba(128, 128, 128, 0.5);
+        padding: 20px;
+        border-radius: 10px;
+        margin: 180px auto;
+        width: 300px;
+      }
+
+      .curs:hover {
+        color: rgb(2, 40, 2);
+      }
+
+      input[type="number"],
+      input[type="reset"] {
+        padding: 10px;
+        margin: 5px;
+        width: calc(100% - 20px);
+        box-sizing: border-box;
+      }
+      input[type="radio"] {
+        display: none;
+      }
+      label {
+        cursor: pointer;
+        background-color: rgb(156, 152, 152);
+        padding: 10px;
+        margin: 5px;
+        display: inline-block;
+        width: calc(50% - 10px);
+        border-radius: 5px;
+      }
+      input[type="radio"]:checked + label {
+        background-color: #666;
+      }
+
+      .cur:hover {
+        color: rgb(5, 95, 5);
+      }
+
+      #result {
+        margin-top: 20px;
+      }
+    </style>
+
+    <script src="form.js"></script>
+  </head>
+  <body>
+    <div id="calculator">
+      <h2>Weight on Planets Calculator</h2>
+      <form id="weightForm">
+        <input
+          type="number"
+          id="weight"
+          placeholder="Enter your weight (kg)"
+          min="0"
+          required
+        />
+        <div>
+          <input type="radio" id="mercury" name="planet" value="mercury" />
+          <label class="curs" for="mercury">Mercury</label>
+          <input type="radio" id="venus" name="planet" value="venus" />
+          <label class="curs" for="venus">Venus</label>
+          <input type="radio" id="mars" name="planet" value="mars" />
+          <label class="curs" for="mars">Mars</label>
+          <input type="radio" id="jupiter" name="planet" value="jupiter" />
+          <label class="curs" for="jupiter">Jupiter</label>
+        </div>
+        <button class="cur" type="submit">Calculate</button>
+        <button class="cur" type="reset">Reset</button>
+      </form>
+      <div id="result"></div>
+    </div>
+  </body>
+</html>
