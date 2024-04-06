@@ -148,12 +148,11 @@ button {
 }
 
 .cisc3610_top ul li {
-  padding-top: 60px;
+  margin-top: 60px;
   padding-left: 100px;
 }
 
 .cisc3610_top ul li a {
-  padding-top: 130px;
   color: #007bff;
   font-weight: bold;
   text-decoration: underline;

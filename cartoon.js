@@ -5,7 +5,6 @@ let gradient;
 var Game = {
   canvas: undefined,
   ctx: undefined,
-  //sprite: undefined,
 };
 
 Game.start = function () {
