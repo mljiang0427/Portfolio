@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio</title>
+
+    <style>
+      body {
+        background-image: url("images/coffee-music.jpeg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+      }
+
+      .sound {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px;
+      }
+
+      .main {
+        width: 420px;
+        height: 484px;
+        padding: 2rem 5rem;
+        margin-left: 200px;
+      }
+      .main h1 {
+        text-align: center;
+        font-size: 400%;
+        color: #6f4e37;
+        font-family: Cursive;
+      }
+
+      .main li {
+        font-size: 200%;
+        margin-top: 20px;
+      }
+
+      .main .soundBtn {
+        margin-left: 20px;
+        background-color: #b39c8b;
+        border: none;
+        border-radius: 13px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .main .soundBtn:hover {
+        background-color: #6f4e37;
+      }
+
+      ion-icon {
+        color: white;
+        font-size: 32px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h1>Music Playlist</h1>
+      <li>
+        Once in paris
+        <button class="soundBtn" id="sound1">
+          <ion-icon name="play-circle-outline"></ion-icon>
+        </button>
+      </li>
+      <li>
+        Beautiful Piano
+        <button class="soundBtn" id="sound2">
+          <ion-icon name="play-circle-outline"></ion-icon>
+        </button>
+      </li>
+      <li>
+        Just Relax
+        <button class="soundBtn" id="sound3">
+          <ion-icon name="play-circle-outline"></ion-icon>
+        </button>
+      </li>
+      <li>
+        Inside you
+        <button class="soundBtn" id="sound4">
+          <ion-icon name="play-circle-outline"></ion-icon>
+        </button>
+      </li>
+      <li>
+        Relaxing
+        <button class="soundBtn" id="sound5">
+          <ion-icon name="play-circle-outline"></ion-icon>
+        </button>
+      </li>
+    </div>
+
+    <script src="audio.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
