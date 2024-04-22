@@ -1,7 +1,7 @@
 {
 	"name":"weigth on planets",
 	"short_name":"weigth on planets",
-	"start_url":"/Portfolio",
+	"start_url":"/~Portfolio",
 	"display":"standalone",
 	"background_color":"#5900b3",
 	"theme_color":"black",
