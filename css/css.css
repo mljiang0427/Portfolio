@@ -139,35 +139,24 @@ button {
 .cisc3610_list {
   width: 930px;
   height: 450px;
-  padding: 0.5rem 0rem;
+  margin-top: 110px;
+  margin-left: 120px;
+}
+.cisc3610_list h2 {
+  margin-bottom: 50px;
+  text-align: center;
 }
 
-.cisc3610_top {
-  width: 100%;
-  height: 320px;
-}
-
-.cisc3610_top ul li {
-  margin-top: 30px;
+.cisc3610_list ul li {
+  margin-top: 20px;
   padding-left: 150px;
 }
 
-.cisc3610_top ul li a {
+.cisc3610_list ul li a {
   color: #007bff;
   font-weight: bold;
   text-decoration: underline;
-  font-size: large;
-}
-
-.cisc3610_bottom {
-  width: 100%;
-  height: 130px;
-}
-
-.aboutme1_image {
-  float: right;
-  border-radius: 15%;
-  margin-right: 40px;
+  font-size: medium;
 }
 
 /*aboutme*/
